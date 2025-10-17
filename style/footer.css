@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* footer */
+.megabox_container footer{
+    background-color: #f8f8fa;    
+    width: 100%;
+}
+
+footer .footer_top,
+footer .footer_bottom{
+    width: 1200px;
+    margin: 0 auto;
+}
+footer .footer_top{
+    padding: 30px 0;
+    overflow: hidden;
+}
+footer .footer_top:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+footer .footer_top .company_intro{
+    float: left;
+}
+footer .footer_top .company_intro a{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 4px;
+    letter-spacing: -1px;
+}
+footer .footer_top .company_intro a:hover{
+    text-decoration: underline;
+}
+footer .footer_top .company_intro a strong{
+    font-size: 14px;
+    font-weight: 600;
+}
+footer .footer_top .theater{
+    float: right;    
+}
+footer .footer_top .theater a{
+    padding: 3px 17px 5px;
+    border: 1px solid #8b8b8b;
+    font-size: 14px;
+    letter-spacing: -1px;
+    border-radius: 15px;
+}
+footer .footer_top .theater a i{
+    color: #666;
+}
+footer .footer_bottom{
+    display: flex;
+    padding-bottom: 60px;
+}
+footer .footer_bottom img{
+    margin-right: 20px;
+    height: fit-content;
+}
+footer .footer_bottom p{
+    width: 815px;
+    font-size: 14px;
+    line-height: 18px;
+}
+footer .footer_bottom .footer-sns{
+    margin-left: 80px;
+}
+footer .footer_bottom .footer-sns a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ADADAF;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 50%;
+}
+footer .footer_bottom .footer-sns a i{
+    color: #f8f8fa;
+}

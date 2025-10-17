@@ -1,0 +1,647 @@
+@charset "utf-8";
+/* section */
+.megabox_container section{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+.megabox_container section h1{
+    padding: 30px 0;
+    font-size: 30px;
+}
+.megabox_container section .viewCount{
+    width: 875px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-top: 1px solid #333;
+}
+.megabox_container section .viewCount>span{
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 31px;
+}
+.megabox_container section .viewCount .reset_btn{
+    line-height: 32px;
+    color: #444;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    padding: 0 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.megabox_container section .headCount{
+    width: 875px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 35px;
+    background-color: #f2f4f5;
+    border: 1px solid #d8d9db;
+    border-bottom: 0;
+}
+.megabox_container section .headCount .adult,
+.megabox_container section .headCount .teen,
+.megabox_container section .headCount .senior,
+.megabox_container section .headCount .discount{
+    display: inline-flex;
+}
+.megabox_container section .headCount span{
+    color: #333;
+    margin-right: 10px;
+    line-height: 1.9em;
+}
+
+.megabox_container section .headCount button[type="button"]{
+    padding: 8px 12px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.megabox_container section .headCount button[type="button"].minus_btn{
+    border-radius: 5px 0 0 5px;
+}
+.megabox_container section .headCount button[type="button"].count_btn{
+    border-left: 0;
+    border-right: 0;
+}
+.megabox_container section .headCount button[type="button"].plus_btn{
+    border-radius: 0 5px 5px 0;
+}
+
+.megabox_container section .reserve{
+    border: 1px solid #d8d9db;
+    padding-top: 47px;
+    height: 451px;
+    border-top: 0;
+}
+
+
+/* 섹션 wrap */
+.section_wrap{
+    display: flex;
+    justify-content: center;            
+}
+/* 섹션 왼쪽부분 */
+.section_left{
+    width: 875px;
+}
+.section_left .reserve h5{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+/* 좌석 테이블 */
+.section_left .reserve .seat table{
+    border-spacing: 3px;
+    border-collapse: separate;
+    margin: 0 auto;
+}
+.section_left .reserve .seat table td{
+    border: 1px solid #02bfd3;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    background-color: #e5b200;
+    color: #fff;
+    cursor: pointer;            
+}
+.section_left .reserve .seat table td:hover{
+    background-color: #503396;
+
+}
+/* 좌석 테이블 - 행시작(알파벳 칸) */
+.section_left .reserve .seat table tr>td:first-child{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #c5c5c5;
+    cursor:default;
+}
+/* 선택 좌석 클래스 */
+.section_left .reserve .seat table td.selectedSeat{
+    background-color: #503396;
+}
+/* 선택불가 좌석 클래스 */
+.section_left .reserve .seat table td.unavailSeats{
+    background-color: #ccc;
+    cursor: default;
+}
+
+/* 섹션 오른쪽 부분 */
+.section_right{
+    position: relative;    
+    margin-left: 15px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    width: 310px;
+    height: 556px;
+    padding: 15px 20px 0;
+    overflow: hidden;
+}
+/* 제목 표시- 전체*/
+.section_right .tit-area{
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 0 28px;
+    border-bottom: 1px solid #434343;
+}
+
+/* 제목 표시 - 연령표시 */
+.section_right .tit-area .year-img{
+    background-size: 20px 20px;
+    background-image: url(../img/15세.png);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+/* 제목 표시 - 제목 */
+.section_right .tit-area .tit{
+    font-size: 1.0667em;
+    font-weight: 400;
+    line-height: 1.1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 제목 표시 - 카테고리 */
+.section_right .tit-area .cate{
+    padding: 5px 0 10px 0;
+    font-size: .8667em;
+    color: #aaa;
+    line-height: 1.1;
+}
+
+/* 예약 날짜, 시간, 장소 등 */
+.section_right .info-area{
+    position: relative;
+    padding-top: 10px;
+    height: 120px;
+    border-bottom: 1px solid #434343;
+}
+
+/* 예약 날짜, 시간, 장소 텍스트 */
+.section_right .info-area .info-left p{
+    font-size: 15px;
+    color: #c4c4c4;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.section_right .info-area .info-left .other-time{
+    position: relative;
+    width: 143px;
+    margin-top: 10px;
+    padding: 0;
+    background-color: #333;
+    border: 1px solid #5c5c5c;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.section_right .info-area .info-left .other-time button{
+    background-color: #333;
+    border: 0;
+    color: #fff;
+}
+.section_right .info-area .info-left .other-time button,
+.section_right .info-area .info-left .other-time ul li{
+    padding-left: 14px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Arial;
+    line-height: 27px;
+}
+.section_right .info-area .info-left .other-time ul li{
+    color: #c4c4c4;
+    display: none;
+}
+
+.section_right .info-area .info-left .other-time .fa-solid{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.section_right .info-area .info-left .other-time .fa-circle-arrow-down{
+    display: block;
+}
+.section_right .info-area .info-left .other-time .fa-circle-arrow-up{
+    display: none;
+}
+
+/* 시간대 선택 버튼 눌렀을때 */
+.section_right .info-area .info-left .other-time.on ul li{
+    display: block;
+}
+.section_right .info-area .info-left .other-time.on .fa-circle-arrow-down{
+    display: none;
+}
+.section_right .info-area .info-left .other-time.on .fa-circle-arrow-up{
+    display: block;
+}
+
+.section_right .info-area .info-left .other-time ul li.selectLi{
+    background-color: #404143;
+    color: #fff;
+}
+
+/* 우측 포스터 이미지 */
+.section_right .info-area .info-right{
+    position: absolute;
+    right: 24px;
+    top: 10px;
+    width: 70px;
+    height: 100px;
+    padding: 0;
+}
+.section_right .info-area .info-right img{
+    display: block;
+    width: 70px;
+    height: 100px;
+}
+
+/* 선택한 좌석표시 */
+.section_right .seat-area{
+    overflow: hidden;
+    border: 1px solid #434343;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.section_right .seat-area .seat-left{
+    float: left;
+    padding: 16px 0 0 20px;
+}
+.section_right .seat-area .seat-left ul li span{
+    color: #c4c4c4;
+    font-size: 14px;
+    letter-spacing: -1px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.section_right .seat-area .seat-left ul li:first-child:before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #503396;
+}
+.section_right .seat-area .seat-left ul li:nth-child(2):before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #ccc;
+}
+
+.section_right .seat-area .seat-right{
+    float: right;
+    border-left: 1px solid #434343;
+    padding-bottom: 15px;
+}
+.section_right .seat-area .seat-right p{
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    line-height: 42px;
+    font-size: .8667em;
+    color: #c4c4c4;
+    text-align: center;
+}
+
+
+.section_right .seat-area .seat-right .seat-choice{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 116px;
+    flex-wrap: wrap;
+    
+}
+.section_right .seat-area .seat-right .seat-choice .seat-select{
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #5c5c5c;
+    text-align: center;
+}
+.section_right .seat-area .seat-right .seat-choice .seat-select.choice{
+    background-color: #503396;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 32px;
+}
+.section_right .seat-area .seat-right .seat-choice .seat-select.possible{
+    background-color: #53565b;
+}
+
+
+
+/* 우측하단 인원유형 및 인원수 표시 */
+.section_right .pay-area{
+    padding: 15px 0px;
+}
+.section_right .pay-area .pay-type{
+    font-size: 13px;
+    line-height: 20px;
+    color: #c4c4c4;
+    height: 20px;
+    font-weight: 300;
+}
+/* 최종결제금액 표시 */
+.section_right .pay-area .pay-calc{
+    padding-top: 16px;
+    overflow: hidden;
+}
+.section_right .pay-area .pay-calc .total{
+    font-size: 14px;
+    float: left;
+}
+.section_right .pay-area .pay-calc .totalPrice{
+    float: right;
+    color: #59bec9;
+    font-weight: 400;
+    font-size: 24px;
+}
+.section_right .pay-area .pay-calc .totalPrice span{
+    color: #fff;
+    font-size: 14px;
+}
+
+/* 이전, 다음 버튼 */
+.section_right .btn-group{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.section_right .btn-group a{
+    float: left;
+    width: 50%;
+    line-height: 40px;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+}
+.section_right .btn-group .prev{
+    background-color: #53565b;
+    color: #fff;
+}
+.section_right .btn-group .next{
+    background-color: #e0e0e0;
+    color: #aaa;
+    cursor: default;
+}
+/* 다음버튼 활성화 */
+.section_right .btn-group .next.act{
+    background-color: #329eb1;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 모달창 */
+.megabox_container .modal{
+    /* border: 1px solid red; */
+    z-index: 10;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+.megabox_container .modal .modal_info{
+    background-color: #fff;
+    width: fit-content;
+    padding: 0 0 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+}
+
+.megabox_container .modal .modal_info .modal_header{
+    position: relative;
+}
+.megabox_container .modal .modal_info .modal_header span{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #339eb2;
+    color: #fff;
+}
+.megabox_container .modal .modal_info .modal_header > .modal_btn{
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+.megabox_container .modal .modal_info .modal_header > .modal_btn:hover{
+    cursor: pointer;
+}
+.megabox_container .modal .modal_info .modal_center{
+    background-color: #fff;
+    margin: 10px;
+}
+.megabox_container .modal .modal_info .modal_center p{
+    /* text-align: center; */
+    line-height: 1.7em;
+    margin: 20px;
+    color: #333;
+}
+.megabox_container .modal .modal_info .modal_center .button_group{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.megabox_container .modal .modal_info .modal_center .button_group #check{
+    padding: 8px;
+    background-color: #339eb2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.megabox_container .modal .modal_info .modal_center .button_group #cancel{
+    padding: 8px;
+    background-color: #fff;
+    color: #339eb2;
+    border: 1px solid #339eb2;
+    border-radius: 5px;
+    display: none;
+}
+.megabox_container .modal .modal_info .modal_center .button_group #cancel.active{
+    display: block;
+}
+.megabox_container .modal .modal_info .modal_center #check:hover{
+    background-color: rgb(81, 0, 156);
+    cursor: pointer;
+}
+.megabox_container .modal .modal_info .modal_center #cancel:hover{
+    background-color: #f7f7f7;
+    color: rgb(81, 0, 156);
+    border: 1px solid rgb(81, 0, 156);
+    cursor: pointer;
+}
+.megabox_container .overlay{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
+/* 모달 실행 */
+.megabox_container .overlay.active{
+    visibility: visible;
+}
+.megabox_container .modal.active{
+    visibility: visible;
+}
+
+
+/* 모달창 */
+.megabox_container .modal{
+    /* border: 1px solid red; */
+    z-index: 10;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+.megabox_container .modal .modal_info{
+    background-color: #fff;
+    padding: 0 0 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+}
+
+.megabox_container .modal .modal_info .modal_header{
+    position: relative;
+}
+.megabox_container .modal .modal_info .modal_header span{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #339eb2;
+    color: #fff;
+}
+.megabox_container .modal .modal_info .modal_header > .modal_btn{
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+.megabox_container .modal .modal_info .modal_header > .modal_btn:hover{
+    cursor: pointer;
+}
+.megabox_container .modal .modal_info .modal_center{
+    background-color: #fff;
+    margin: 10px;
+}
+.megabox_container .modal .modal_info .modal_center p{
+    /* text-align: center; */
+    line-height: 1.7em;
+    margin: 20px;
+    color: #333;
+}
+.megabox_container .modal .modal_info .modal_center .button_group{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.megabox_container .modal .modal_info .modal_center .button_group #check1{
+    padding: 8px;
+    background-color: #339eb2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.megabox_container .modal .modal_info .modal_center .button_group #check2{
+    padding: 8px;
+    background-color: #339eb2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+/* .megabox_container .modal .modal_info .modal_center .button_group #check2.active{
+    display: block;
+} */
+.megabox_container .modal .modal_info .modal_center .button_group #cancel{
+    padding: 8px;
+    background-color: #fff;
+    color: #339eb2;
+    border: 1px solid #339eb2;
+    border-radius: 5px;
+    display: none;
+}
+.megabox_container .modal .modal_info .modal_center .button_group #cancel.active{
+    display: block;
+}
+.megabox_container .modal .modal_info .modal_center #check1:hover,
+.megabox_container .modal .modal_info .modal_center #check2:hover{
+    background-color: rgb(81, 0, 156);
+    cursor: pointer;
+}
+.megabox_container .modal .modal_info .modal_center #cancel:hover{
+    background-color: #f7f7f7;
+    color: rgb(81, 0, 156);
+    border: 1px solid rgb(81, 0, 156);
+    cursor: pointer;
+}
+.megabox_container .overlay{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
+/* 모달 실행 */
+.megabox_container .overlay.active{
+    visibility: visible;
+}
+.megabox_container .modal.active{
+    visibility: visible;
+}
+
+
+/* 모달 15세 이상 css */
+.megabox_container .modal .modal_info .modal_center .message .fifteen{
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 710px;
+}
+.megabox_container .modal .modal_info .modal_center .message .fifteen .fifteen-left{
+    float: left;
+    width: 20%;
+    background-color: #f2f4f5;
+    padding: 73px 50px;
+}
+.megabox_container .modal .modal_info .modal_center .message .fifteen .fifteen-right{
+    float: right;
+    width: 80%;
+}
+.megabox_container .modal .modal_info .modal_center .message .fifteen .fifteen-right .tit{
+    font-size: 19px;
+}
+.megabox_container .modal .modal_info .modal_center .message .fifteen .fifteen-right .txt{
+    font-size: 15px;
+    line-height: 22px;
+}

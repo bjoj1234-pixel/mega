@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* section */
+.megabox_container section{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+.megabox_container section h1{
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+/* 섹션 wrap */
+.section_wrap{
+               
+}
+/* 최상단 카테고리 버튼 */
+.section_wrap .top-menu ul{
+    display: flex;
+}
+.section_wrap .top-menu ul li{
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #503396;
+    border-left: 0;
+}
+.section_wrap .top-menu ul li:first-child{
+    border-left: 1px solid #ccc;
+}
+.section_wrap .top-menu ul li.active{
+    
+}
+.section_wrap .top-menu ul li a{
+    display: block;
+    line-height: 41px;
+}
