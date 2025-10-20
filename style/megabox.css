@@ -420,6 +420,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     visibility: hidden;
+    z-index: 101;
 }
 .megabox_container .modal .modal_info{
     background-color: #fff;
@@ -501,6 +502,7 @@
     left: 0;
     top: 0;
     visibility: hidden;
+    z-index: 100;
 }
 /* 모달 실행 */
 .megabox_container .overlay.active{
@@ -508,6 +510,7 @@
 }
 .megabox_container .modal.active{
     visibility: visible;
+    z-index: 101;
 }
 
 

@@ -3,7 +3,7 @@
 .megabox_container section{
     width: 1200px;
     margin: 0 auto;
-    padding-bottom: 70px;
+    padding-bottom: 130px;
 }
 .megabox_container section h1{
     padding: 30px 0;
@@ -29,9 +29,285 @@
     border-left: 1px solid #ccc;
 }
 .section_wrap .top-menu ul li.active{
-    
+    border-color: #503396;
+    border-bottom: 0;
+}
+.section_wrap .top-menu ul li.active a{
+    color: #503396;
 }
 .section_wrap .top-menu ul li a{
     display: block;
     line-height: 41px;
+    border-bottom: 0;
+}
+
+.section_wrap .filter01{
+    overflow: hidden;
+    margin: 45px 0 25px;
+}
+.section_wrap .filter01 a{
+    float: left;
+}
+.section_wrap .filter01 a .btn-on{
+    display: inline-block;
+    width: 24px;
+    height: 16.5px;
+    background-image: url(../img/movieList/btnon.png);
+    background-position: 0% 1px;
+    background-repeat: no-repeat;    
+}
+.section_wrap .filter01 a .btn-on.active{
+    background-position: 0% -18px;
+}
+.section_wrap .filter01 a>span{
+    font-size: 15px;
+    letter-spacing: -1px;
+    vertical-align: top;
+}
+.section_wrap .filter01 .search-result,
+.section_wrap .filter02 .search-result{
+    padding-left: 22px; 
+}
+.section_wrap .filter01 .search-result span,
+.section_wrap .filter02 .search-result span{
+    letter-spacing: -1px;
+    font-size: 15px;
+    vertical-align: top;
+}
+.section_wrap .filter01 .search-result .search-num,
+.section_wrap .filter02 .search-result .search-num{
+    font-weight: 500;
+}
+
+.section_wrap .filter02{
+    margin: 45px 0 25px;
+}
+.section_wrap .filter02 .filter-btn a{
+    font-size: 15px;
+    letter-spacing: -1px;
+    vertical-align: top;
+    color: #666;
+}
+.section_wrap .filter02 .filter-btn .line{
+    color: #666;
+    font-weight: 100;
+    padding: 1px 4px 0;
+    font-size: 12px;
+    vertical-align: top;
+    display: inline-block;
+}
+.section_wrap .filter02 .filter-btn a.active{
+    color: #000;
+}
+.section_wrap .movie-list{
+}
+.section_wrap .movie-list ol{
+    display: flex;
+    gap: 46px;
+    position: relative;
+    z-index: 3;
+    flex-flow:wrap;
+}
+.section_wrap .movie-list ol li{
+    position: relative;
+    flex-basis: 22%;
+    width: 22%;
+}
+.section_wrap .movie-list ol li .megaonly{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 40px;
+}
+.section_wrap .movie-list ol li .number{
+    position: absolute;
+    top: 11px;
+    left: 16px;
+    color: #fff;
+    font-size: 35px;
+    font-family: arial;
+    font-style: italic;
+    font-weight: 100;
+    text-shadow: 2px 2px 2px #212121;
+    z-index: 1;
+}
+.section_wrap .movie-list ol li .img-wrap{
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.section_wrap .movie-list ol li .img-wrap .img-txt{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+    padding: 25px;
+    border-radius: 7px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.section_wrap .movie-list ol li .img-wrap.on .img-txt{
+    opacity: 1;    
+}
+.section_wrap .movie-list ol li .img-wrap .img-txt .desc{
+    font-size: 15px;
+    line-height: 22px;
+    height: 198px;
+    overflow: hidden;
+    color: #fff;
+}
+.section_wrap .movie-list ol li .img-wrap .img-txt .score{   
+    padding: 6px 0 0 0;
+    text-align: center;
+    border-top: 1px solid #3c3c3c;
+    margin-top: 88px;
+}
+.section_wrap .movie-list ol li .img-wrap .img-txt .score span{
+    line-height: 38px;
+    vertical-align: middle;
+}
+.section_wrap .movie-list ol li .img-wrap .img-txt .score .mov_tit{
+    font-size: 14px;
+    color: #fff;
+}
+.section_wrap .movie-list ol li .img-wrap .img-txt .score .mov_score{
+    font-size: 27px;
+    color: #59bec9;
+    padding-left: 11px;
+}
+
+.section_wrap .movie-list ol li .img-wrap img{
+    display: block;
+    width: 100%;
+    height: 377.14px;
+    border-radius:7px;
+}
+
+
+.section_wrap .movie-list ol li .list-info{
+    margin: 15px 0;
+}
+.section_wrap .movie-list ol li .list-info .movie-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section_wrap .movie-list ol li .list-info .movie-title img{
+    width: 23px;
+    vertical-align: sub;
+}
+.section_wrap .movie-list ol li .list-info .movie-title span{
+    font-size: 19px;
+    color: #444;
+    padding-left: 4px;
+}
+.section_wrap .movie-list ol li .list-info .movie-info{
+    margin: 11px 0 13px;
+    color: #444;
+}
+.section_wrap .movie-list ol li .list-info .movie-info span{
+    font-size: 15px;
+}
+.section_wrap .movie-list ol li .list-info .movie-info .line{
+    color: #ccc;
+    font-size: 12px;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: 300;
+    padding: 1px 2px 0;
+}
+
+
+
+.section_wrap .movie-list ol li .list-btn{
+    display: flex;
+    margin-top: 9px;
+}
+.section_wrap .movie-list ol li .list-btn button{
+    line-height: 36px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-weight: 300;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #666;
+}
+.section_wrap .movie-list ol li .list-btn button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.section_wrap .movie-list ol li .list-btn button i{
+    margin-right: 4px;
+    vertical-align: text-bottom;
+}
+.section_wrap .movie-list ol li .list-btn .ticket a{
+    width: 181px;
+    line-height: 36px;
+    height: 38px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #503396;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #fff;
+}
+.section_wrap .movie-list ol li .list-btn .dolby a{
+    width: 87px;
+    line-height: 36px;
+    height: 38px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #503396;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+}
+.section_wrap .movie-list ol li .list-btn .dolby a:first-child{
+    margin-left: 5px;
+}
+.section_wrap .movie-list ol li .list-btn .dolby a img{
+    margin-top: 8px;
+}
+
+.section_wrap .movie-list ol li .list-btn a:hover{
+    background-color: #382070;
+}
+
+.section_wrap .movie-list ol li .list-btn .off{
+    width: 181px;
+    line-height: 36px;
+    height: 38px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #666;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.section_wrap .more{
+    width: 100%;
+    border: 1px solid #cccccc;
+    display: block;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 50px;
+}
+.section_wrap .more:hover{
+    border: 1px solid #666;
+
+}
+.section_wrap .more span{
+    display: inline-block;
+    transform: rotate(270deg);
 }
